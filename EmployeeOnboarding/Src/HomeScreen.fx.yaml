@@ -1,0 +1,272 @@
+HomeScreen As screen:
+    Fill: =RGBA(242, 239, 223, 1)
+    LoadingSpinnerColor: =RGBA(30, 14, 91, 1)
+
+    Icon1 As icon.Add:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(92, 74, 168, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =99
+        Icon: =Icon.Add
+        OnSelect: |-
+            =Set(varFormmMode,Defaults('Employee Onboardings'));
+            ResetForm(PeronalInfoForm);
+            ResetForm(WorkExperienceForm);
+            ResetForm(OnboardingForm);
+            Navigate(PersonalInfo)
+        Width: =114
+        X: =1252
+        Y: =3
+        ZIndex: =1
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =5
+        Width: =1366
+        Y: =97
+        ZIndex: =2
+
+    Rectangle1_2 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =6
+        Width: =1252
+        X: =114
+        ZIndex: =3
+
+    Rectangle1_3 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Height: =102
+        Width: =5
+        X: =1361
+        ZIndex: =4
+
+    Rectangle1 As rectangle:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Fill: =RGBA(30, 14, 91, 1)
+        Width: =1252
+        ZIndex: =5
+
+    Label1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =81
+        Size: =40
+        Text: ="Employee OnBoarding"
+        Width: =692
+        X: =366
+        Y: =12
+        ZIndex: =6
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Fill: =RGBA(202, 202, 202, 1)
+        Height: =56
+        Width: =1366
+        Y: =124
+        ZIndex: =7
+
+    Label2 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =13
+        Text: ="Name"
+        Width: =100
+        X: =14
+        Y: =132
+        ZIndex: =8
+
+    Label2_1 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =13
+        Text: ="DOB"
+        Width: =100
+        X: =149
+        Y: =134
+        ZIndex: =9
+
+    Label2_2 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =13
+        Text: ="City State"
+        Width: =100
+        X: =266
+        Y: =134
+        ZIndex: =10
+
+    Label2_3 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =13
+        Text: ="Email"
+        Width: =100
+        X: =424
+        Y: =134
+        ZIndex: =11
+
+    Label2_4 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =13
+        Text: ="Phone No"
+        Width: =100
+        X: =633
+        Y: =132
+        ZIndex: =12
+
+    Label2_5 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =13
+        Text: ="Job Title"
+        Width: =100
+        X: =813
+        Y: =134
+        ZIndex: =13
+
+    Label2_6 As label:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        Size: =13
+        Text: ="Onboarding Date"
+        Width: =184
+        X: =1029
+        Y: =134
+        ZIndex: =14
+
+    Gallery1 As gallery.galleryVertical:
+        BorderColor: =RGBA(92, 74, 168, 1)
+        DelayItemLoading: =true
+        Items: ='Employee Onboardings'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplateSize: =71
+        Width: =1366
+        Y: =193
+        ZIndex: =15
+
+        Label3 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Name
+            Width: =107
+            Y: =20
+            ZIndex: =1
+
+        Label4 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'City-State'
+            X: =276
+            Y: =20
+            ZIndex: =2
+
+        Label5 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.DOB
+            Width: =196
+            X: =107
+            Y: =20
+            ZIndex: =3
+
+        Label6 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Phone
+            X: =635
+            Y: =20
+            ZIndex: =4
+
+        Label7 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.Email
+            Width: =281
+            X: =354
+            Y: =20
+            ZIndex: =5
+
+        Label8 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Job Title'
+            Width: =247
+            X: =785
+            Y: =20
+            ZIndex: =6
+
+        Label8_1 As label:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =ThisItem.'Onboard Date'
+            Width: =183
+            X: =1032
+            Y: =20
+            ZIndex: =7
+
+        Icon2 As icon.Edit:
+            BorderColor: =RGBA(92, 74, 168, 1)
+            Color: =RGBA(92, 74, 168, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =42
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =Select(Parent);
+                Set(varFormmMode,Gallery1.Selected);
+                Navigate(PersonalInfo)
+            Width: =46
+            X: =1277
+            Y: =18
+            ZIndex: =8
+

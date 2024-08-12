@@ -1,0 +1,131 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr762_table1s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr762_table1",
+    "MaxGetRowsCount": 500,
+    "Name": "Employee Onboardings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr762_citystate": "City-State",
+      "cr762_dob": "DOB",
+      "cr762_email": "Email",
+      "cr762_emergencycontact": "Emergency Contact",
+      "cr762_jobtitle": "Job Title",
+      "cr762_name": "Name",
+      "cr762_newcolumn": "New column",
+      "cr762_onboarddate": "Onboard Date",
+      "cr762_phone": "Phone",
+      "cr762_postalcode": "Postal Code",
+      "cr762_previousexperience": "Previous Experience",
+      "cr762_reportstomangaer": "Reports to Mangaer",
+      "cr762_resume": "Resume",
+      "cr762_salary": "Salary",
+      "cr762_streetaddress": "Street Address",
+      "cr762_table1_AsyncOperations": "System Jobs",
+      "cr762_table1_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr762_table1_FileAttachments": "FileAttachments",
+      "cr762_table1_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr762_table1_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr762_table1_ProcessSession": "Process Sessions",
+      "cr762_table1_SyncErrors": "Sync Errors",
+      "cr762_table1id": "Table1",
+      "cr762_technology": "Technology",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Employee Onboardings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Employee Onboardings (Views)",
+    "Name": "_cr762_table1_views",
+    "RelatedEntityName": "Employee Onboardings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "490ccc9e-ddd7-49a8-bece-4740fd8a9fa2": "Table1 Associated View",
+      "83b5fba4-f7e8-438d-a106-bfd552575981": "Table1 Lookup View",
+      "cf66747b-c6bc-4bfe-898f-8e0e8188ef52": "Active Table1S",
+      "d0701568-d049-467f-839b-45c6574864be": "Table1 Advanced Find View",
+      "e9bb4c26-f8b2-4037-baaa-42f156bcd2c5": "Inactive Table1S"
+    }
+  },
+  {
+    "DisplayName": "M",
+    "Name": "cr762_m",
+    "OptionSetInfoNameMapping": {
+      "298250000": "PowerBi",
+      "298250001": "PowerApps"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr762_technology",
+        "OptionSetReferenceEntityName": "Employee Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "cr762_technology",
+    "RelatedEntityName": "Employee Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Employee Onboardings)",
+    "Name": "cr762_table1_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Employee Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Employee Onboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Employee Onboardings)",
+    "Name": "cr762_table1_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Employee Onboardings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Employee Onboardings",
+    "Type": "OptionSetInfo"
+  }
+]
